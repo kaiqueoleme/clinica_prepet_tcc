@@ -73,7 +73,7 @@ if(isset($_SESSION['mensagem_erro_estoque_edit'])) {
         <div class="w3-container w3-padding">
             <?php echo $mensagem; ?>
 
-            <form action="/prepet/Controller/Navegacao.php" method="POST" class="w3-container w3-margin-top">
+            <form action="../Controller/Navegacao.php" method="POST" class="w3-container w3-margin-top">
                 <input type="hidden" name="id_item" value="<?php echo htmlspecialchars($idItem); ?>">
                 
                 <p>

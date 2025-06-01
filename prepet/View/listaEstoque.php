@@ -74,12 +74,7 @@ $itensEstoque = $estoqueController->listarItensEstoque(); // Busca todos os iten
         <div class="w3-card-4 w3-white w3-padding-large w3-round-large w3-display-middle" style="width:90%;max-width:800px;">
             <h2><i class="fa fa-cubes"></i> Estoque Atual</h2>
             <p>Lista de todos os itens disponíveis no estoque.</p>
-
-            <p style="margin-bottom: 20px;">
-                <a href="../View/adicionarEstoque.php" class="w3-button w3-blue w3-block w3-round-large">
-                    <i class="fa fa-plus-circle"></i> Adicionar Novo Item
-                </a>
-            </p>
+            
 
             <?php if (empty($itensEstoque)): ?>
                 <div class="w3-panel w3-yellow w3-round-large w3-padding-16">

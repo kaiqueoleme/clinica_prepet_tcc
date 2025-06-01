@@ -103,7 +103,7 @@ unset($_SESSION['mensagem_erro_hist']);
                 </div>
             </div>
             <a href="veterinarioVerHistorico.php" class="w3-bar-item w3-button w3-padding w3-teal"><i class="fa fa-history fa-fw"></i> Histórico de Pacientes</a>
-            <form action="/prepet/Controller/Navegacao.php" method="post" style="margin:0;">
+            <form action="../Controller/Navegacao.php" method="post" style="margin:0;">
                  <button type="submit" name="btnSair" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i> Sair</button>
             </form>
         </div>

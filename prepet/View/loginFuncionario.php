@@ -42,7 +42,7 @@
             }
             ?>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                 <p><input class="w3-input w3-border w3-round" type="text" name="usuario" placeholder="Usuário" required></p>
                 <p><input class="w3-input w3-border w3-round" type="password" name="senha" placeholder="Senha" required></p>
                 <p>

@@ -70,7 +70,7 @@ unset($_SESSION['mensagem_erro']);
                 </div>
             <?php endif; ?>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post" class="w3-container w3-padding-16">
+            <form action="../Controller/Navegacao.php" method="post" class="w3-container w3-padding-16">
                 <p>
                     <label for="id_pessoa_tutor" class="w3-text-grey"><b><i class="fa fa-user"></i> Selecione o Tutor (Pessoa):</b></label>
                     <select id="id_pessoa_tutor" name="id_pessoa_tutor" required>

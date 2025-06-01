@@ -173,7 +173,8 @@ switch (true) {
 
         if ($uController->inserir(
             $_POST["login"],
-            $_POST["senha"] 
+            $_POST["senha"],
+            $_POST["acesso"] 
         )) {
             include_once "../View/cadastroRealizado.php";
             unset($_SESSION['dados_pessoa']);
@@ -654,7 +655,7 @@ switch (true) {
     case isset($_POST['btnAtualizarItemEstoque']):
         if (isset($_SESSION['nivel_acesso']) && $_SESSION['nivel_acesso'] == 3) { // Acesso Veterinário
             
-            require_once __DIR__ . "/../Controller/EstoqueController.php";
+            require_once __DIR__ . "/EstoqueController.php";
 
             $id_item = $_POST['id_item'] ?? null;
             $nome_produto = $_POST['nome_produto'] ?? '';
@@ -675,7 +676,7 @@ switch (true) {
             $estoqueController = new EstoqueController();
             if ($estoqueController->atualizarItemEstoque((int)$id_item, $nome_produto, (int)$quantidade, $fornecedor)) {
                 $_SESSION['mensagem_sucesso_estoque'] = "Item ID ".htmlspecialchars($id_item)." atualizado com sucesso no estoque!";
-                header('Location: ../View/listaEstoque.php');
+                header('Location: ../View/listaEstoqueVet.php');
                 exit();
             } else {
                 $erroMsg = $estoqueController->getMensagemErro() ?: "Ocorreu um erro ao atualizar o item do estoque.";

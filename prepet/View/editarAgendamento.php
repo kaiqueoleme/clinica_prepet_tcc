@@ -70,6 +70,7 @@ if ($idAgendamento) {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .w3-card-4 {
             margin-top: 50px;
@@ -85,13 +86,8 @@ if ($idAgendamento) {
             <p>Altere os detalhes do agendamento selecionado.</p>
 
             <?php
-            if (isset($_SESSION['mensagem'])) {
-                echo '<div class="w3-panel w3-green w3-round-large w3-padding-16">
-                            <h3>Sucesso!</h3>
-                            <p>' . htmlspecialchars($_SESSION['mensagem']) . '</p>
-                        </div>';
-                unset($_SESSION['mensagem']); // Limpa a mensagem após exibir
-            }
+            
+            
             if (isset($_SESSION['erro'])) {
                 echo '<div class="w3-panel w3-red w3-round-large w3-padding-16">
                             <h3>Erro!</h3>
@@ -101,7 +97,7 @@ if ($idAgendamento) {
             }
             ?>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post" class="w3-container w3-margin-top">
+            <form action="../Controller/Navegacao.php" method="post" class="w3-container w3-margin-top">
                 <input type="hidden" name="id_agendamento" value="<?php echo htmlspecialchars($agendamentoParaEditar['id']); ?>">
                 <p>
                     <label for="data_agend" class="w3-left">Data:</label>

@@ -34,7 +34,7 @@ session_start();
                     unset($_SESSION['mensagem_erro']);
                 }
                 ?>
-                <form action="/prepet/Controller/Navegacao.php" method="post" class="w3-container">
+                <form action="../Controller/Navegacao.php" method="post" class="w3-container">
 
                     <h3>Dados da Pessoa</h3>
                     <p>

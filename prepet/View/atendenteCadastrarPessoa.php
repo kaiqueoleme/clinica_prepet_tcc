@@ -57,7 +57,7 @@ unset($_SESSION['mensagem_erro']);
                 </div>
             <?php endif; ?>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post" class="w3-container w3-padding-16">
+            <form action="../Controller/Navegacao.php" method="post" class="w3-container w3-padding-16">
                 <p>
                     <label for="nome" class="w3-text-grey"><b><i class="fa fa-user"></i> Nome Completo:</b></label>
                     <input class="w3-input w3-border w3-round-large" type="text" id="nome" name="nome" required>

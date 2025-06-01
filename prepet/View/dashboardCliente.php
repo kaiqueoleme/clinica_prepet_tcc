@@ -77,17 +77,17 @@ if ($idTutorLogado > 0) {
     <hr>
     <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-dashboard fa-fw"></i>  Dashboard</a>
     
-    <form action="/prepet/View/cadastrarPaciente.php" method="get">
+    <form action="../View/cadastrarPaciente.php" method="get">
         <button type="submit" name="btnNovoPaciente" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus fa-fw"></i>  Cadastrar Paciente</button>
     </form>
 
-    <a href="/prepet/View/conferirAgendamentos.php" class="w3-bar-item w3-button w3-padding">
+    <a href="../View/conferirAgendamentos.php" class="w3-bar-item w3-button w3-padding">
         <i class="fa fa-calendar-check-o fa-fw"></i>  Conferir Agendamentos
     </a>
-    <a href="/prepet/View/historicoPets.php" class="w3-bar-item w3-button w3-padding">
+    <a href="../View/historicoPets.php" class="w3-bar-item w3-button w3-padding">
         <i class="fa fa-history fa-fw"></i>  Ver Histórico de Pets
     </a>
-    <form action="/prepet/Controller/Navegacao.php" method="post">
+    <form action="../Controller/Navegacao.php" method="post">
         <button type="submit" name="btnSair" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i>  Sair</button>
     </form>
 </nav>
@@ -124,13 +124,13 @@ if ($idTutorLogado > 0) {
                             <td><?php echo htmlspecialchars($paciente['raca']); ?></td>
                             <td><?php echo htmlspecialchars($paciente['data_nasc']); ?></td>
                             <td>
-                                <form action="/prepet/View/editarPaciente.php" method="get" style="display:inline-block;">
+                                <form action="../View/editarPaciente.php" method="get" style="display:inline-block;">
                                     <input type="hidden" name="id" value="<?php echo htmlspecialchars($paciente['id']); ?>">
                                     <button type="submit" class="w3-button w3-small w3-teal w3-round-large">
                                         <i class="fa fa-edit"></i> Editar
                                     </button>
                                 </form>
-                                <form action="/prepet/Controller/Navegacao.php" method="post" style="display:inline-block;" onsubmit="return confirm('Tem certeza que deseja excluir o paciente <?php echo htmlspecialchars($paciente['nome']); ?>?');">
+                                <form action="../Controller/Navegacao.php" method="post" style="display:inline-block;" onsubmit="return confirm('Tem certeza que deseja excluir o paciente <?php echo htmlspecialchars($paciente['nome']); ?>?');">
                                     <input type="hidden" name="idPaciente" value="<?php echo htmlspecialchars($paciente['id']); ?>">
                                     <button type="submit" name="btnExcluirPaciente" class="w3-button w3-small w3-red w3-round-large">
                                         <i class="fa fa-trash"></i> Excluir

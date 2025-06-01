@@ -48,10 +48,10 @@
     <p>Ocorreu um erro ao tentar realizar o seu cadastro. Por favor, revise as informações e tente novamente. Se o problema persistir, entre em contato com o suporte.</p>
     
     <p>
-        <form action="/prepet/Controller/Navegacao.php" method="post" style="display:inline-block;">
+        <form action="../Controller/Navegacao.php" method="post" style="display:inline-block;">
             <button type="submit" name="btnVoltarCadastro" class="w3-button w3-red w3-round-large">Tentar Novamente</button> </form>
 
-        <form action="/prepet/Controller/Navegacao.php" method="post" style="display:inline-block;">
+        <form action="../Controller/Navegacao.php" method="post" style="display:inline-block;">
             <button type="submit" name="btnTelaInicial" class="w3-button w3-light-grey w3-round-large">Página Inicial</button>
         </form>
     </p>

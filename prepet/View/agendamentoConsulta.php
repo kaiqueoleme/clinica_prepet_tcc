@@ -45,6 +45,7 @@ $veterinarios = $veterinarioModel->listarVeterinarios();
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         .w3-card-4 {
             margin-top: 50px;
@@ -84,7 +85,7 @@ $veterinarios = $veterinarioModel->listarVeterinarios();
             <h2><i class="fa fa-calendar-plus-o"></i> Agendar Novo Atendimento</h2>
             <p>Preencha os detalhes para agendar um atendimento.</p>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                 <p>
                     <label for="id_paciente" class="w3-left">Paciente:</label>
                     <select id="id_paciente" name="id_pac" required>

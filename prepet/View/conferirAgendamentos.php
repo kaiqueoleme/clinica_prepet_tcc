@@ -70,7 +70,7 @@ if(isset($_SESSION['usuario_logado'])){
     <a href="cadastrarPaciente.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus fa-fw"></i>  Cadastrar Pet</a>
     <a href="conferirAgendamentos.php" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-calendar-check-o fa-fw"></i>  Meus Agendamentos</a>
     <a href="historicoPets.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  Histórico dos Pets</a>
-    <form action="/prepet/Controller/Navegacao.php" method="post" style="margin:0;">
+    <form action="../Controller/Navegacao.php" method="post" style="margin:0;">
         <button type="submit" name="btnSair" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i>  Sair</button>
     </form>
 </nav>

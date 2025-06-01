@@ -79,7 +79,7 @@ if (isset($_SESSION['usuario_logado'])) {
             <h2><i class="fa fa-paw"></i> Cadastrar Novo Paciente</h2>
             <p>Preencha os dados do seu pet.</p>
             
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                 <p>
                     <input type="text" name="nome" placeholder="Nome do Paciente" required>
                 </p>

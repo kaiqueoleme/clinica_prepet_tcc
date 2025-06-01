@@ -1,25 +1,51 @@
 <?php
 // Model/Usuario.php
 
-class Usuario {
+class Usuario
+{
     private $login;
     private $senha;
     private $id_pessoa;
     private $id_acesso;
 
-    public function setLogin($login) { $this->login = $login; }
-    public function getLogin() { return $this->login; }
+    public function setLogin($login)
+    {
+        $this->login = $login;
+    }
+    public function getLogin()
+    {
+        return $this->login;
+    }
 
-    public function setSenha($senha) { $this->senha = $senha; }
-    public function getSenha() { return $this->senha; }
+    public function setSenha($senha)
+    {
+        $this->senha = $senha;
+    }
+    public function getSenha()
+    {
+        return $this->senha;
+    }
 
-    public function setIdPessoa($id_pessoa) { $this->id_pessoa = $id_pessoa; }
-    public function getIdPessoa() { return $this->id_pessoa; }
+    public function setIdPessoa($id_pessoa)
+    {
+        $this->id_pessoa = $id_pessoa;
+    }
+    public function getIdPessoa()
+    {
+        return $this->id_pessoa;
+    }
 
-    public function setIdAcesso($id_acesso) { $this->id_acesso = $id_acesso; }
-    public function getIdAcesso() { return $this->id_acesso; }
+    public function setIdAcesso($id_acesso)
+    {
+        $this->id_acesso = $id_acesso;
+    }
+    public function getIdAcesso()
+    {
+        return $this->id_acesso;
+    }
 
-    public function inserirBD() {
+    public function inserirBD()
+    {
         require_once 'ConexaoBD.php';
         $con = new ConexaoBD();
         $conn = $con->conectar();
@@ -30,6 +56,7 @@ class Usuario {
         $stmt = $conn->prepare($sql);
 
         $stmt->bind_param("ssii", $this->login, $senhaHash, $this->id_pessoa, $this->id_acesso);
+
 
         if ($stmt->execute()) {
             $stmt->close();
@@ -42,7 +69,8 @@ class Usuario {
         }
     }
 
-    public function carregarUsuario($login) {
+    public function carregarUsuario($login)
+    {
         require_once 'ConexaoBD.php';
         $con = new ConexaoBD();
         $conn = $con->conectar();
@@ -69,7 +97,8 @@ class Usuario {
         }
     }
 
-    public function atualizarBD($loginAtual, $novoLogin, $novaSenha = null) {
+    public function atualizarBD($loginAtual, $novoLogin, $novaSenha = null)
+    {
         require_once 'ConexaoBD.php';
         $con = new ConexaoBD();
         $conn = $con->conectar();
@@ -125,4 +154,3 @@ class Usuario {
         }
     }
 }
-?>

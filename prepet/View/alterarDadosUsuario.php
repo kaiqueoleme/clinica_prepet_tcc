@@ -146,6 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $objUsuario) { // Garante que $objU
             background-repeat: no-repeat;
             padding-top: 40px; /* Adiciona espaço no topo */
             padding-bottom: 40px; /* Adiciona espaço na base */
+            background-attachment: fixed;
         }
         .main-container-wrapper { /* Novo wrapper para centralização */
             display: flex;

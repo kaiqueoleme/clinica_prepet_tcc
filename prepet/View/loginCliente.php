@@ -42,13 +42,13 @@
             }
             ?>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                 <p><input class="w3-input w3-border w3-round" type="text" name="usuario" placeholder="Usuário" required></p>
                 <p><input class="w3-input w3-border w3-round" type="password" name="senha" placeholder="Senha" required></p>
                 <p><button name="btnLogarCliente" class="w3-button w3-black w3-block w3-round-large">Entrar</button></p>
             </form>
 
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                 <p><button name="btnCadastrar" class="w3-button w3-blue w3-block w3-round-large">Cadastre-se</button></p>
             </form>
         </div>

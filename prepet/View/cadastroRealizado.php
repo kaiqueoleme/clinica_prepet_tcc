@@ -47,11 +47,11 @@
     <p>Parabéns! Sua conta foi criada com êxito. Agora você pode fazer login para acessar todos os recursos da nossa clínica veterinária.</p>
     
     <p>
-        <form action="/prepet/Controller/Navegacao.php" method="post" style="display:inline-block;">
+        <form action="../Controller/Navegacao.php" method="post" style="display:inline-block;">
             <button type="submit" name="btnLoginClientes" class="w3-button w3-cyan w3-round-large">Fazer Login</button>
         </form>
 
-        <form action="/prepet/Controller/Navegacao.php" method="post" style="display:inline-block;">
+        <form action="../Controller/Navegacao.php" method="post" style="display:inline-block;">
             <button type="submit" name="btnTelaInicial" class="w3-button w3-light-grey w3-round-large">Página Inicial</button>
         </form>
     </p>

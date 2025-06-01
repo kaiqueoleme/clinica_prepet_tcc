@@ -9,12 +9,12 @@ require_once __DIR__ . '/../Model/Pessoa.php';
 
 class UsuarioController {
 
-    public function inserir($login, $senha) {
+    public function inserir($login, $senha, $id_acesso) {
         require_once '../Model/Usuario.php';
         $usuario = new Usuario();
-
         $usuario->setLogin($login);
         $usuario->setSenha($senha); // A senha será hashada no Model
+        $usuario->setIdAcesso($id_acesso);
         if (isset($_SESSION['id_pessoa'])) {
             $usuario->setIdPessoa($_SESSION['id_pessoa']);
         } else {

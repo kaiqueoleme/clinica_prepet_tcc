@@ -108,7 +108,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <h2><i class="fa fa-paw"></i> Editar Paciente: <?php echo htmlspecialchars($pacienteParaEdicao->getNome()); ?></h2>
             <p>Altere os dados do seu pet.</p>
             
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                 <input type="hidden" name="idPaciente" value="<?php echo htmlspecialchars($pacienteParaEdicao->getId()); ?>">
                 
                 <p>

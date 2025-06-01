@@ -30,7 +30,7 @@
     <div class="w3-container w3-padding-64 w3-center">
         <div class="w3-card-4 w3-white w3-padding-large w3-round-large w3-display-middle" style="width:90%;max-width:400px;">
             <h2><i class="fa fa-user-circle"></i> Cadastro</h2>
-            <form action="/prepet/Controller/Navegacao.php" method="post">
+            <form action="../Controller/Navegacao.php" method="post">
                     <h3><i class="fa fa-user-circle"></i>Endereço</h3>
                     <input type="text" name="logradouro" placeholder="Logradouro" required>
                     <input type="text" name="numero" placeholder="Número" required>

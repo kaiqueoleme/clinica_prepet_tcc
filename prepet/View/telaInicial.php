@@ -25,7 +25,7 @@
 </head>
 <body class="w3-light-grey">
     
-    <form action="/prepet/Controller/Navegacao.php" method="post">
+    <form action="../Controller/Navegacao.php" method="post">
         <input type="hidden" name="nome_form" value="frmLogin" />
         
         <!-- Navbar -->

@@ -2,7 +2,7 @@
 class ConexaoBD {
     private $serverName = "localhost";
     private $userName = "root";
-    private $password = ""; // ou "usbw", dependendo do XAMPP
+    private $password = "@Kaiqueleme17"; // ou "usbw", dependendo do XAMPP
     private $dbName = "clinica_veterinaria";
 
     public function conectar() {
